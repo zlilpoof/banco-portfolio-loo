@@ -38,9 +38,9 @@ public class Banco {
         }
     }
     private void criarConta(Scanner scanner) {
-        System.out.println("Digite o CPF:");
+        System.out.print("Digite o CPF: ");
         String cpf = scanner.next();
-        System.out.println("Digite a senha:");
+        System.out.print("Digite a senha: ");
         String senha = scanner.next();
         System.out.print("Digite seu nome: ");
         String nome = scanner.next();
@@ -50,9 +50,9 @@ public class Banco {
         System.out.println("Conta criada com sucesso!");
     }
     private void login(Scanner scanner) {
-        System.out.println("Digite o CPF:");
+        System.out.print("Digite o CPF: ");
         String cpf = scanner.next();
-        System.out.println("Digite a senha:");
+        System.out.print("Digite a senha: ");
         String senha = scanner.next();
         Conta conta = contas.get(cpf);
         if (conta != null && conta.getSenha().equals(senha)) {
